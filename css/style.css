@@ -1,0 +1,106 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+ul{
+    list-style: none;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    background: #88f7ed;
+    background-image: url(../images/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container{
+    padding: 40px;
+    background: #9bbe8c;
+    border-radius: 10px;
+}
+
+.container input{
+    padding: 10px 20px;
+    border: 0;
+    border-bottom: 2px solid #d0d0d0;
+    outline: 0;
+    margin-top: 20px;
+}
+
+.container input:focus{
+    border-color: #008192;
+}
+
+.container button{
+    padding: 10px 20px;
+    background: #008192;
+    border: 0;
+    color: #d0d0d0;
+    
+}
+
+.container button:hover{
+    background: #009eb3;
+}
+
+.listContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 20px;
+    
+}
+
+.listContainer li{
+    background: #9bbe8c;
+    padding: 10px 15px 10px 30px;
+    position: relative;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.listContainer .listItem{
+    text-decoration: line-through;
+    color: #989898;
+
+}
+
+.listContainer li.listItem span{
+    background: #d4d4d4;
+}
+
+.listContainer li span{
+    height: 15px;
+    width: 15px;
+    background: transparent;
+    border-radius: 50%;
+    border: 2px solid #d4d4d4;
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.listContainer li i{
+   position: absolute;
+   right: 10px;
+   top: 50%;
+   transform: translateY(-50%);
+}
+
+.error{
+    padding: 8px;
+    background: #a55151;
+    color: rgba(255, 214, 214, 0.726);
+    display: none;
+    border-radius: 5px;
+}
